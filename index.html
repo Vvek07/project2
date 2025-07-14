@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vs code to git</title>
+</head>
+<body>
+    <p>Microsoft Windows [Version 10.0.26100.4351]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class>cd project2
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git init
+Reinitialized existing Git repository in C:/Users/vivek/Apna College/Learning Backend/Github Demo Class/project2/.git/
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>ls -la
+total 8
+drwxr-xr-x 1 vivek 197609 0 Jul 13 17:57 .
+drwxr-xr-x 1 vivek 197609 0 Jul 13 17:57 ..
+drwxr-xr-x 1 vivek 197609 0 Jul 14 18:05 .git
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        readme.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git add .
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+        new file:   readme.md
+
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git commit -m "new project2"
+[main (root-commit) ba246a5] new project2
+ 2 files changed, 2 insertions(+)
+ create mode 100644 index.html
+ create mode 100644 readme.md
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git remote add origin https://github.com/Vvek07/project2.git
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git remote -v
+origin  https://github.com/Vvek07/project2.git (fetch)
+origin  https://github.com/Vvek07/project2.git (push)
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git branch
+* main
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 299 bytes | 74.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Vvek07/project2.git
+ * [new branch]      main -> main
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   readme.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git commit -am "added new"
+[main acb08d8] added new
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git status
+On branch main
+nothing to commit, working tree clean
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 359 bytes | 359.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Vvek07/project2.git
+   ba246a5..acb08d8  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git push
+Everything up-to-date
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        hgwhdu.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git add .
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git commit -m "new chnage"
+[main dc97ee2] new chnage
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hgwhdu.css
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+C:\Users\vivek\Apna College\Learning Backend\Github Demo Class\project2>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 278 bytes | 92.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Vvek07/project2.git
+   acb08d8..dc97ee2  main -> main
+</p>
+</body>
+</html>
